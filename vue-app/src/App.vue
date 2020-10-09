@@ -1,6 +1,5 @@
 <template>
   <div id="app" class="small-container">
-    <h1></h1>
 
     <product-page :products="products" />
 
@@ -52,12 +51,17 @@ export default {
 </script>
 
 <style>
+body {
+  background-color: #202329;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
   margin-top: 60px;
+  color:white;
 }
+
 </style>
