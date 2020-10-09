@@ -3,7 +3,7 @@
     <div id="product-page">
         <div class="container">
             <h1>products</h1>
-            <table class="table">
+            <table class="table" style="color:white">
             <thead>
                 <tr>
                     <th>PRICE</th>
