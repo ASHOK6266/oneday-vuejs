@@ -2,18 +2,20 @@
   <div id="app" class="small-container">
 
     <product-page :products="products" />
-
+    <product-form @update:product="addProduct" />
   </div>
 </template>
 
 <script>
 
 import ProductPage from '@/components/ProductPage.vue'
+import ProductForm from '@/components/ProductForm.vue'
 
 export default {
   name: 'App',
   components: {
     ProductPage,
+    ProductForm
   },
   data(){
     return {
@@ -45,8 +47,12 @@ export default {
         },
       ]
     }
-
+  },
+  methods: {
+  add(employee) {
+    this.employees = [...this.employees, employee]
   }
+}
 }
 </script>
 
